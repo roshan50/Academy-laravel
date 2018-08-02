@@ -1,0 +1,57 @@
+@media screen and (max-width: 450px){
+  .banner__image img{
+    width: 100%;
+  }
+  .banner__context{
+    width: 100%;
+  }
+  .banner__text{
+    font-size: 16px;
+  }
+  .banner__sign img{
+    width: 90%;
+  }
+
+}
+/*.. this is for screen size upper than 576px ...*/
+@media screen and (min-width: 576px) {
+  .cat--card{
+    width: 200px;
+  }
+}
+
+/*.. this is for screen size upper than 768px ...*/
+@media screen and (min-width: 768px)  {
+  .nav-link{
+    font-size: 14px;
+  }
+}
+
+/*.. this is for screen size upper than 980px ...*/
+@media screen and (min-width: 992px) {
+  .nav-link{
+    font-size: 13px;
+  }
+  .nav-item{
+    padding-left: 0.5rem;
+  }
+  .navbar-nav{
+    margin-right: 50px;
+  }
+  .mdi:before{
+    margin-left: 0;
+  }
+}
+
+/*.. this is for screen size upper than 1200px ...*/
+@media screen and (min-width: 1200px) {
+  .nav-link{
+    font-size: 14px;
+  }
+  .nav-item{
+    padding-left: 1.01rem;
+  }
+  .navbar-nav{
+    margin-right: 130px;
+  }
+}

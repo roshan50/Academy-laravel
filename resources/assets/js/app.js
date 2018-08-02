@@ -21,4 +21,5 @@ require('./bootstrap');
 //     el: '#app'
 // });
 
-// require('flickity');
+// importing the app modules ...
+require('./modules/flickity')
