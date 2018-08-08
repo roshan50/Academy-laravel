@@ -22,4 +22,6 @@ require('./bootstrap');
 // });
 
 // importing the app modules ...
-require('./modules/flickity')
+require('./modules/scroll')
+require('./modules/collapse')
+require('./modules/rating')

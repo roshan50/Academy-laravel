@@ -1,11 +1,11 @@
 <ul class="bottom-menu list-unstyled">
     <li class="my-list-group-item mdi mdi-chevron-left">
-        <a href="#">
+        <a href="/">
             صفحه نخست
         </a>
     </li>
     <li class="my-list-group-item mdi mdi-chevron-left">
-        <a href="">
+        <a href="courses">
             دوره های آموزشی
         </a>
     </li>

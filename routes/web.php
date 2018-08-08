@@ -19,7 +19,7 @@ Route::get('/', function()
     return View::make('pages.home');
 });
 
-Route::get('about', function()
+Route::get('courses', function()
 {
-    return View::make('pages.about');
+    return View::make('pages.courses');
 });
