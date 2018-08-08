@@ -35954,7 +35954,8 @@ module.exports = function spread(callback) {
 
 $(document).ready(function () {
     var makescrollfromTop = function makescrollfromTop() {
-        $("#scroll").scrollTop(80);
+        $("#scroll").scrollTop(100);
+        $("#scroll").scrollLeft(200);
     };
     makescrollfromTop();
 });

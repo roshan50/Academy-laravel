@@ -11236,15 +11236,12 @@ footer {
   border-top: 1px solid #d6d8df;
 }
 
-/*video page*/
+/*video page..................................................................*/
 
 .course-video {
   margin: 0;
   padding: 0;
-}
-
-.video-list {
-  margin-right: 20px;
+  width: 100%;
 }
 
 .video-list__title {
@@ -11259,10 +11256,17 @@ footer {
 }
 
 .video-list-group {
-  height: 448px;
-  overflow-y: scroll;
-  direction: ltr;
   margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  padding-left: 0;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  overflow-y: hidden;
+  overflow-x: scroll;
 }
 
 #scroll::-webkit-scrollbar-track {
@@ -11322,26 +11326,20 @@ footer {
 
 .course-about {
   text-align: justify;
-  padding-left: 40px;
-  width: 800px;
-}
-
-.cost {
-  width: 35%;
 }
 
 .btn-purchase {
-  width: 240px;
   height: 45px;
   border-radius: 5px;
   background-color: #fe5b57;
   color: #ffffff;
+  margin-right: 20%;
 }
 
 .course-info {
   padding-right: 30px;
-  width: 340px;
   margin-bottom: 0;
+  border-top: 1px solid gainsboro;
 }
 
 .course-info li {
@@ -11353,8 +11351,26 @@ footer {
   padding-bottom: 0 !important;
 }
 
+.courses {
+  border-top: 1px solid gainsboro;
+  padding-top: 10px;
+}
+
 .course-level {
   margin-bottom: 60px;
+}
+
+.course-level__img {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .course-level__body {
@@ -11370,19 +11386,12 @@ footer {
 }
 
 .level__header {
-  width: 15%;
   padding-bottom: 25px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.level__list {
-  width: 45%;
 }
 
 .level__list item {
   padding-bottom: 25px;
+  display: -webkit-box !important;
 }
 
 .level__list .mdi:before {
@@ -11493,6 +11502,52 @@ footer {
   .border-lg-left {
     border-left: 1px solid gainsboro;
   }
+
+  .video-list {
+    margin-right: 20px;
+  }
+
+  .video-list-group {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 448px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    direction: ltr;
+  }
+
+  .course-about {
+    width: 71%;
+    padding-left: 40px;
+  }
+
+  .course-info {
+    width: 28%;
+    border-top: none;
+  }
+
+  .btn-purchase {
+    margin-right: 0;
+  }
+
+  .courses {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .level__header {
+    width: 15%;
+    padding-bottom: 25px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .level__list {
+    width: 45%;
+  }
 }
 
 /*.. this is for screen size upper than 1200px ...*/
@@ -11508,10 +11563,6 @@ footer {
 
   .navbar-nav {
     margin-right: 130px;
-  }
-
-  .border-lg-left {
-    border-left: 1px solid gainsboro;
   }
 }
 

@@ -47,6 +47,39 @@
   .border-lg-left{
     border-left: 1px solid gainsboro;
   }
+  .video-list{
+    margin-right: 20px;
+  }
+  .video-list-group{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 448px;
+    flex-direction: column;
+    direction: ltr;
+  }
+  .course-about{
+    width: 71%;
+    padding-left: 40px;
+  }
+  .course-info{
+    width: 28%;
+    border-top: none;
+  }
+  .btn-purchase{
+    margin-right: 0;
+  }
+  .courses{
+    border-top: none;
+    padding-top: 0;
+  }
+  .level__header{
+    width: 15%;
+    padding-bottom: 25px;
+    justify-content: space-between;
+  }
+  .level__list{
+    width: 45%;
+  }
 }
 
 /*.. this is for screen size upper than 1200px ...*/
@@ -59,8 +92,5 @@
   }
   .navbar-nav{
     margin-right: 130px;
-  }
-  .border-lg-left{
-    border-left: 1px solid gainsboro;
   }
 }

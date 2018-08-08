@@ -1,5 +1,5 @@
-<div class="course-level d-flex">
-    <div class="img">
+<div class="course-level d-flex flex-column flex-lg-row">
+    <div class="course-level__img">
         <img src="{{  URL::asset('images/course.jpg') }}" alt="">
     </div>
     <div class="course-level__body">
@@ -42,7 +42,7 @@
                         <div class="item__time mdi mdi-clock-outline">21:45</div>
                     </div>
                 </item>
-                <item class="d-flex">
+                <item class="d-sm-flex">
                     <div class="item__icon">
                         <img src="{{  URL::asset('images/play.png') }}" alt="">
                     </div>
