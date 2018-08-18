@@ -23,3 +23,8 @@ Route::get('courses', function()
 {
     return View::make('pages.courses');
 });
+
+Route::get('login', function()
+{
+    return View::make('pages.login');
+});

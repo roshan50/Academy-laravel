@@ -12,5 +12,5 @@
     <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="MaterialDesign-Webfont-master/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
-    @stack('scripts')
+
 </head>

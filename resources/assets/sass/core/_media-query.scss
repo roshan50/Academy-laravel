@@ -19,15 +19,13 @@
 /*.. this is for screen size upper than 576px ...*/
 @media screen and (min-width: 576px) {
   .cat--card{
-    width: 200px;
+    width: 190px;
   }
 }
 
 /*.. this is for screen size upper than 768px ...*/
 @media screen and (min-width: 768px)  {
-  .nav-link{
-    font-size: 14px;
-  }
+
 }
 
 /*.. this is for screen size upper than 980px ...*/
@@ -41,14 +39,21 @@
   .navbar-nav{
     margin-right: 50px;
   }
-  .mdi:before{
+  .navbar-nav .mdi:before{
     margin-left: 0;
+  }
+  .banner__context{
+    //background-image: url("/images/banner.jpg") no-repeat ;
   }
   .border-lg-left{
     border-left: 1px solid gainsboro;
   }
+  .course-video{
+    width: 880px;
+    height: 540px;
+  }
   .video-list{
-    margin-right: 20px;
+    margin-right: 10px;
   }
   .video-list-group{
     overflow-y: scroll;
@@ -79,6 +84,12 @@
   }
   .level__list{
     width: 45%;
+  }
+  .teacher{
+    padding: 30px;
+  }
+  .course-level__body{
+    padding-right: 20px;
   }
 }
 

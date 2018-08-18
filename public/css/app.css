@@ -213,6 +213,7 @@ header {
   --light: #f8f9fa;
   --dark: #343a40;
   --light-green: #eafaf1;
+  --login: #eceeef;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -2300,6 +2301,21 @@ pre code {
   background-color: #e3faec;
 }
 
+.table-login,
+.table-login > th,
+.table-login > td {
+  background-color: #fafafb;
+}
+
+.table-hover .table-login:hover {
+  background-color: #ececf0;
+}
+
+.table-hover .table-login:hover > td,
+.table-hover .table-login:hover > th {
+  background-color: #ececf0;
+}
+
 .table-active,
 .table-active > th,
 .table-active > td {
@@ -3383,6 +3399,46 @@ fieldset:disabled a.btn {
           box-shadow: 0 0 0 0.2rem rgba(234, 250, 241, 0.5);
 }
 
+.btn-login {
+  color: #212529;
+  background-color: #eceeef;
+  border-color: #eceeef;
+}
+
+.btn-login:hover {
+  color: #212529;
+  background-color: #d7dbde;
+  border-color: #d0d5d8;
+}
+
+.btn-login:focus,
+.btn-login.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(236, 238, 239, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(236, 238, 239, 0.5);
+}
+
+.btn-login.disabled,
+.btn-login:disabled {
+  color: #212529;
+  background-color: #eceeef;
+  border-color: #eceeef;
+}
+
+.btn-login:not(:disabled):not(.disabled):active,
+.btn-login:not(:disabled):not(.disabled).active,
+.show > .btn-login.dropdown-toggle {
+  color: #212529;
+  background-color: #d0d5d8;
+  border-color: #c9cfd2;
+}
+
+.btn-login:not(:disabled):not(.disabled):active:focus,
+.btn-login:not(:disabled):not(.disabled).active:focus,
+.show > .btn-login.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(236, 238, 239, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(236, 238, 239, 0.5);
+}
+
 .btn-outline-primary {
   color: #505a78;
   background-color: transparent;
@@ -3741,6 +3797,46 @@ fieldset:disabled a.btn {
 .show > .btn-outline-light-green.dropdown-toggle:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(234, 250, 241, 0.5);
           box-shadow: 0 0 0 0.2rem rgba(234, 250, 241, 0.5);
+}
+
+.btn-outline-login {
+  color: #eceeef;
+  background-color: transparent;
+  background-image: none;
+  border-color: #eceeef;
+}
+
+.btn-outline-login:hover {
+  color: #212529;
+  background-color: #eceeef;
+  border-color: #eceeef;
+}
+
+.btn-outline-login:focus,
+.btn-outline-login.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(236, 238, 239, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(236, 238, 239, 0.5);
+}
+
+.btn-outline-login.disabled,
+.btn-outline-login:disabled {
+  color: #eceeef;
+  background-color: transparent;
+}
+
+.btn-outline-login:not(:disabled):not(.disabled):active,
+.btn-outline-login:not(:disabled):not(.disabled).active,
+.show > .btn-outline-login.dropdown-toggle {
+  color: #212529;
+  background-color: #eceeef;
+  border-color: #eceeef;
+}
+
+.btn-outline-login:not(:disabled):not(.disabled):active:focus,
+.btn-outline-login:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-login.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(236, 238, 239, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(236, 238, 239, 0.5);
 }
 
 .btn-link {
@@ -5934,6 +6030,18 @@ input[type="button"].btn-block {
   background-color: #c1f0d6;
 }
 
+.badge-login {
+  color: #212529;
+  background-color: #eceeef;
+}
+
+.badge-login[href]:hover,
+.badge-login[href]:focus {
+  color: #212529;
+  text-decoration: none;
+  background-color: #d0d5d8;
+}
+
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
@@ -6105,6 +6213,20 @@ input[type="button"].btn-block {
 
 .alert-light-green .alert-link {
   color: #616864;
+}
+
+.alert-login {
+  color: #7b7c7c;
+  background-color: #fbfcfc;
+  border-color: #fafafb;
+}
+
+.alert-login hr {
+  border-top-color: #ececf0;
+}
+
+.alert-login .alert-link {
+  color: #626262;
 }
 
 @-webkit-keyframes progress-bar-stripes {
@@ -6423,6 +6545,23 @@ input[type="button"].btn-block {
   color: #fff;
   background-color: #7a827d;
   border-color: #7a827d;
+}
+
+.list-group-item-login {
+  color: #7b7c7c;
+  background-color: #fafafb;
+}
+
+.list-group-item-login.list-group-item-action:hover,
+.list-group-item-login.list-group-item-action:focus {
+  color: #7b7c7c;
+  background-color: #ececf0;
+}
+
+.list-group-item-login.list-group-item-action.active {
+  color: #fff;
+  background-color: #7b7c7c;
+  border-color: #7b7c7c;
 }
 
 .close {
@@ -7341,6 +7480,17 @@ button.bg-light-green:focus {
   background-color: #c1f0d6 !important;
 }
 
+.bg-login {
+  background-color: #eceeef !important;
+}
+
+a.bg-login:hover,
+a.bg-login:focus,
+button.bg-login:hover,
+button.bg-login:focus {
+  background-color: #d0d5d8 !important;
+}
+
 .bg-white {
   background-color: #fff !important;
 }
@@ -7423,6 +7573,10 @@ button.bg-light-green:focus {
 
 .border-light-green {
   border-color: #eafaf1 !important;
+}
+
+.border-login {
+  border-color: #eceeef !important;
 }
 
 .border-white {
@@ -10688,6 +10842,15 @@ a.text-light-green:focus {
   color: #c1f0d6 !important;
 }
 
+.text-login {
+  color: #eceeef !important;
+}
+
+a.text-login:hover,
+a.text-login:focus {
+  color: #d0d5d8 !important;
+}
+
 .text-body {
   color: #959499 !important;
 }
@@ -10819,10 +10982,16 @@ a.text-light-green:focus {
   }
 }
 
+@font-face {
+  font-family: ArabicTwo_Bold;
+  src: url("/public/fonts/ArabicTwo_Bold.ttf");
+}
+
 body {
   direction: rtl;
   text-align: right;
   font-size: 14px;
+  font-family: IRANSans,ArabicTwo_Bold;
 }
 
 a:hover {
@@ -10866,7 +11035,7 @@ h1 {
 
 .nav-link {
   color: #505a78;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .navbar-btn-user {
@@ -10882,7 +11051,11 @@ h1 {
 }
 
 .banner__context {
-  margin-top: 140px;
+  padding-top: 140px;
+}
+
+.banner__context:after {
+  opacity: 0.5;
 }
 
 .banner__sign {
@@ -10919,7 +11092,7 @@ h1 {
 .search__icon {
   position: absolute;
   font-size: 30px;
-  margin-top: -10px;
+  margin-top: -4px;
   margin-right: 28px;
   color: darkgray;
 }
@@ -11080,7 +11253,7 @@ h1 {
 
 .cat--card {
   background-color: #ffffff;
-  width: 100%;
+  width: 75%;
   height: 160px;
   border-radius: 5px;
   -webkit-box-align: center;
@@ -11095,12 +11268,12 @@ h1 {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .cat--card__bar {
   background-color: red;
-  width: 145px;
+  width: 75%;
   height: 5px;
   margin-top: 10px;
 }
@@ -11238,10 +11411,9 @@ footer {
 
 /*video page..................................................................*/
 
-.course-video {
-  margin: 0;
-  padding: 0;
+.video {
   width: 100%;
+  height: 100%;
 }
 
 .video-list__title {
@@ -11267,21 +11439,6 @@ footer {
       flex-direction: row;
   overflow-y: hidden;
   overflow-x: scroll;
-}
-
-#scroll::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #505a78;
-}
-
-#scroll::-webkit-scrollbar {
-  width: 6px;
-  background-color: #505a78;
-}
-
-#scroll::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  background-color: #fe5b57;
 }
 
 .video-list-group-item {
@@ -11373,10 +11530,6 @@ footer {
           align-items: start;
 }
 
-.course-level__body {
-  padding-right: 20px;
-}
-
 .course-level__title {
   padding-bottom: 10px;
 }
@@ -11391,7 +11544,6 @@ footer {
 
 .level__list item {
   padding-bottom: 25px;
-  display: -webkit-box !important;
 }
 
 .level__list .mdi:before {
@@ -11403,7 +11555,6 @@ footer {
 }
 
 .teacher {
-  padding: 30px;
   text-align: justify;
 }
 
@@ -11442,6 +11593,78 @@ footer {
   padding: 12px 5px;
 }
 
+/*............................................................................*/
+
+.banner-login__image {
+  padding: 60px 0;
+}
+
+.banner-login__image img {
+  width: 100%;
+}
+
+.login-pannel h1 {
+  margin-bottom: 25px;
+  color: #9b9b9f;
+}
+
+.input-div {
+  width: 83%;
+}
+
+.input-style {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #b5b4b7;
+  color: #b5b4b7 !important;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  padding-right: 40px;
+}
+
+.input-mdi {
+  position: absolute;
+  font-size: 18px;
+  margin-top: 7px;
+  margin-right: 20px;
+}
+
+.remember-me {
+  width: 80%;
+}
+
+.login-checkbox {
+  width: 15px;
+  height: 15px;
+  background-color: #ffffff;
+}
+
+.login-label {
+  margin: 20px 10px;
+}
+
+.btn-login {
+  width: 83%;
+  height: 45px;
+  color: #ffffff;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+.btn-login .mdi:before {
+  margin-left: 5px;
+}
+
+.or {
+  font-size: 25px;
+}
+
+.login-border-left {
+  height: 130px;
+  margin: 12px 0;
+  border-left: 1px solid #979daa;
+}
+
 @media screen and (max-width: 450px) {
   .banner__image img {
     width: 100%;
@@ -11468,17 +11691,11 @@ footer {
 
 @media screen and (min-width: 576px) {
   .cat--card {
-    width: 200px;
+    width: 190px;
   }
 }
 
 /*.. this is for screen size upper than 768px ...*/
-
-@media screen and (min-width: 768px) {
-  .nav-link {
-    font-size: 14px;
-  }
-}
 
 /*.. this is for screen size upper than 980px ...*/
 
@@ -11495,7 +11712,7 @@ footer {
     margin-right: 50px;
   }
 
-  .mdi:before {
+  .navbar-nav .mdi:before {
     margin-left: 0;
   }
 
@@ -11503,8 +11720,13 @@ footer {
     border-left: 1px solid gainsboro;
   }
 
+  .course-video {
+    width: 880px;
+    height: 540px;
+  }
+
   .video-list {
-    margin-right: 20px;
+    margin-right: 10px;
   }
 
   .video-list-group {
@@ -11547,6 +11769,14 @@ footer {
 
   .level__list {
     width: 45%;
+  }
+
+  .teacher {
+    padding: 30px;
+  }
+
+  .course-level__body {
+    padding-right: 20px;
   }
 }
 

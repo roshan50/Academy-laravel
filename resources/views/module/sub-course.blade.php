@@ -14,7 +14,7 @@
         </li>
     </ul>
     <div class="teacher col-xs-12 col-lg-4 order-0 order-lg-1">
-        <div class="teacher__header d-flex flex-column flex-lg-row">
+        <div class="teacher__header d-flex flex-column align-items-center flex-lg-row align-items-lg-baseline">
             <div class="teacher__img">
                 <img src="{{  URL::asset('images/author.png') }}" alt="">
             </div>

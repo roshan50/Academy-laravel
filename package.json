@@ -24,6 +24,7 @@
         "@mdi/font": "^2.5.94",
         "browser-sync-webpack-plugin": "^2.2.2",
         "flickity": "^2.1.2",
-        "material-design-icons": "^3.0.1"
+        "material-design-icons": "^3.0.1",
+        "nicescroll": "^3.7.4"
     }
 }

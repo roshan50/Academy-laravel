@@ -1,3 +1,4 @@
+console.log('fli');
 var Flickity = require('flickity');
 
 var elem = document.querySelector('.main-carousel');

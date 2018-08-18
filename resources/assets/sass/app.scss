@@ -11,17 +11,24 @@
 $theme-colors: (
         "primary": #505a78,
         "secondary": #fe5b57,
-        "light-green": #eafaf1
+        "light-green": #eafaf1,
+        "login": #eceeef
 );
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 //@import "~material-design-icons/iconfont/material-icons.css";
 @import "~flickity/css/flickity.css";
 
+@font-face {
+  font-family: ArabicTwo_Bold;
+  src: url("/public/fonts/ArabicTwo_Bold.ttf");
+}
+
 body{
   direction: rtl;
   text-align: right;
   font-size: 14px;
+  font-family: IRANSans,ArabicTwo_Bold;
 }
 a:hover{
   text-decoration: none;
@@ -52,7 +59,7 @@ h1{
 }
 .nav-link {
   color: $primary;
-  font-size: 13px;
+  font-size: 16px;
   //font-size: 1vw;
 }
 
@@ -68,7 +75,11 @@ h1{
   padding-bottom: 71px;
 }
 .banner__context{
-  margin-top: 140px;
+  padding-top: 140px;
+  //background-image: url("/images/banner.jpg");
+}
+.banner__context:after{
+  opacity: 0.5;
 }
 .banner__sign{
   margin-right: 25px;
@@ -100,7 +111,7 @@ h1{
 .search__icon{
   position: absolute;
   font-size: 30px;
-  margin-top: -10px;
+  margin-top: -4px;
   margin-right: 28px;
   color: darkgray;
 }
@@ -234,18 +245,18 @@ h1{
 .cat--card{
   background-color: #ffffff;
   //width: 200px;
-  width: 100%;
+  width: 75%;
   height: 160px;
   border-radius: 5px;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 .cat--card__bar{
   background-color: red;
-  width: 145px;
+  width: 75%;
   height: 5px;
   margin-top: 10px;
 }
@@ -341,10 +352,10 @@ footer{
   border-top: 1px solid #d6d8df;
 }
 /*video page..................................................................*/
-.course-video{
-  margin: 0;
-  padding: 0;
+
+.video{
   width: 100%;
+  height: 100%;
 }
 
 .video-list__title{
@@ -370,19 +381,21 @@ footer{
   overflow-y: hidden;
   overflow-x: scroll;
 }
-
-#scroll::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  background-color: $primary;
+.video-list-group a:hover{
+   //color:inherit;
 }
-#scroll::-webkit-scrollbar {
-  width: 6px;
-  background-color: $primary;
-}
-#scroll::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  background-color: $secondary;
-}
+//#scroll::-webkit-scrollbar-track {
+//  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+//  background-color: $primary;
+//}
+//#scroll::-webkit-scrollbar {
+//  width: 6px;
+//  background-color: $primary;
+//}
+//#scroll::-webkit-scrollbar-thumb {
+//  border-radius: 5px;
+//  background-color: $secondary;
+//}
 
 .video-list-group-item{
   padding-right: 10px;
@@ -460,9 +473,7 @@ footer{
   padding-bottom: 10px;
   align-items: start;
 }
-.course-level__body{
-  padding-right: 20px;
-}
+
 .course-level__title{
   padding-bottom: 10px;
 }
@@ -477,7 +488,7 @@ footer{
 
 .level__list item{
   padding-bottom: 25px;
-  display: -webkit-box !important;
+  //display: -webkit-box !important;
 }
 .level__list .mdi:before{
   padding-left: 5px;
@@ -486,7 +497,6 @@ footer{
   text-align: justify;
 }
 .teacher{
-  padding: 30px;
   text-align: justify;
 }
 .teacher__header{
@@ -512,6 +522,66 @@ footer{
   padding: 12px 5px;
 }
 
+/*............................................................................*/
+.banner-login__image{
+  padding: 60px 0;
+}
+.banner-login__image img{
+  width: 100%;
+}
+.login-pannel h1{
+  margin-bottom: 25px;
+  color: #9b9b9f;
+}
+.input-div{
+  width: 83%;
+}
+.input-style{
+  //width: 380px;
+  width: 100%;
+  height: 45px;
+  border:1px solid #b5b4b7;
+  color: #b5b4b7 !important;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  padding-right: 40px;
+}
+.input-mdi{
+  position: absolute;
+  font-size: 18px;
+  margin-top: 7px;
+  margin-right: 20px;
+}
+.remember-me{
+  width: 80%;
+}
+.login-checkbox{
+  width: 15px;
+  height: 15px;
+  background-color: #ffffff;
+}
+.login-label{
+  margin: 20px 10px;
+}
+.btn-login{
+  //width: 380px;
+  width: 83%;
+  height: 45px;
+  color: #ffffff;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+.btn-login .mdi:before{
+  margin-left: 5px;
+}
+.or{
+  font-size: 25px;
+}
+.login-border-left{
+  height: 130px;
+  margin: 12px 0;
+  border-left: 1px solid #979daa;
+}
 
 @import "core/media-query";
 
