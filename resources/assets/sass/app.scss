@@ -12,7 +12,8 @@ $theme-colors: (
         "primary": #505a78,
         "secondary": #fe5b57,
         "light-green": #eafaf1,
-        "login": #eceeef
+        "login": #eceeef,
+        "dark": #717171
 );
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
@@ -581,6 +582,68 @@ footer{
   height: 130px;
   margin: 12px 0;
   border-left: 1px solid #979daa;
+}
+/*............................................................................*/
+.pannel{
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+.personal{
+  padding: 50px 35px 50px 0;
+}
+.personal__txt{
+  padding-right: 20px;
+}
+.personal,.statistic,.medals{
+  height: 200px;
+}
+.credit,.achivment{
+  height: 90px;
+  padding: 20px;
+}
+.credit__txt,.achivment__txt{
+  padding-right: 20px;
+}
+.medals{
+  padding:0 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.my-dashboard,.my-courses{
+  height: 472.8px;
+}
+.my-dashboard li{
+  margin-bottom: 10px;
+  padding: 14px 25px;
+  font-size: 13px;
+}
+.my-course__header{
+  font-weight: bold;
+  padding: 20px;
+}
+.my-course__body{
+  padding: 0 30px 30px 30px;
+}
+.my-course__body td{
+  width: 160px;
+}
+th,td{
+  text-align: center;
+  padding: 17px 0;
+}
+th{
+  border-bottom: 1px solid #000;
+}
+.badge{
+  width: 100px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-16{
+  font-size: 16px;
 }
 
 @import "core/media-query";
